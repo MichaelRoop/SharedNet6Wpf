@@ -4,10 +4,10 @@ using LogUtils.Net;
 using System;
 using System.Text;
 using System.Windows;
-using WpfCustomControlLib.Core.Helpers;
-using WpfHelperClasses.Core;
+using WpfCustomControlLib.Net6.Helpers;
+using WpfHelperClasses.Net6;
 
-namespace WpfCustomControlLib.Core.UtilWindows {
+namespace WpfCustomControlLib.Net6.UtilWindows {
 
     /// <summary>Logic for CrashReport.xaml</summary>
     public partial class CrashReport : Window {

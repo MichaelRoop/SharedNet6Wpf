@@ -1,6 +1,6 @@
-﻿using WpfUserControlLib.Enumerations;
+﻿using WpfUserControlLib.Net6.Enumerations;
 
-namespace WpfUserControlLib.DataModels {
+namespace WpfUserControlLib.Net6.DataModels {
 
     public class UIntEditStatusInfo {
         public UintEditStatus Status { get; set; } = UintEditStatus.UnhandledError;

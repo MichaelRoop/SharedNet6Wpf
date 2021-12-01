@@ -5,7 +5,22 @@
       "ProjectGuid": "4f37c3c8-3619-432f-8daf-8a7a9fbcdaaf",
       "DisplayName": "SharedNet6Wpf",
       "ColorIndex": 0
+    },
+    "8273eba8-fd12-494e-b494-a10c108dcdf6": {
+      "ProjectGuid": "8273eba8-fd12-494e-b494-a10c108dcdf6",
+      "DisplayName": "WpfHelperClasses.Net6",
+      "ColorIndex": 1
+    },
+    "f3f124e6-ae7f-4c8f-971f-b5c2446f4cf2": {
+      "ProjectGuid": "f3f124e6-ae7f-4c8f-971f-b5c2446f4cf2",
+      "DisplayName": "WpfCustomControlLib.Net6",
+      "ColorIndex": 2
+    },
+    "140a9b0e-7410-44ac-afc3-9f2f28d61346": {
+      "ProjectGuid": "140a9b0e-7410-44ac-afc3-9f2f28d61346",
+      "DisplayName": "WpfUserControlLib.Net6",
+      "ColorIndex": 3
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 4
 }

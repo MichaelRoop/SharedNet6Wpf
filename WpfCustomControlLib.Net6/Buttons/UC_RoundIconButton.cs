@@ -2,7 +2,7 @@
 using System.Windows.Controls;
 using System.Windows.Media;
 
-namespace WpfCustomControlLib.Core.Buttons {
+namespace WpfCustomControlLib.Net6.Buttons {
 
     public class UC_RoundIconButton : Button {
 

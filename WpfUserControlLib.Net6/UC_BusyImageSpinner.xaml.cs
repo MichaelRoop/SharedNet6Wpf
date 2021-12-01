@@ -11,7 +11,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace WpfUserControlLib {
+namespace WpfUserControlLib.Net6 {
     /// <summary>
     /// Interaction logic for UC_BusyImageSpinner.xaml
     /// </summary>

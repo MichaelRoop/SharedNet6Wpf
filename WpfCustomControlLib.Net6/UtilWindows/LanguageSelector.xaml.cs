@@ -5,10 +5,10 @@ using LogUtils.Net;
 using System;
 using System.Windows;
 using System.Windows.Controls;
-using WpfCustomControlLib.Core.Helpers;
-using WpfHelperClasses.Core;
+using WpfCustomControlLib.Net6.Helpers;
+using WpfHelperClasses.Net6;
 
-namespace WpfCustomControlLib.Core.UtilWindows {
+namespace WpfCustomControlLib.Net6.UtilWindows {
 
     /// <summary>logic for LanguageSelector.xaml</summary>
     public partial class LanguageSelector : Window {

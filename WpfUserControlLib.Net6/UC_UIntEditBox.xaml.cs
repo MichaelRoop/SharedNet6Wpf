@@ -2,9 +2,9 @@
 using System;
 using System.Windows.Controls;
 using System.Windows.Input;
-using WpfHelperClasses.Core;
+using WpfHelperClasses.Net6;
 
-namespace WpfUserControlLib {
+namespace WpfUserControlLib.Net6 {
 
     /// <summary>Interaction logic for UC_UIntEditBox.xaml</summary>
     public partial class UC_UIntEditBox : UC_UintEditBoxBase {

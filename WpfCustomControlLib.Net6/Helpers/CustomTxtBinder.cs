@@ -6,7 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace WpfCustomControlLib.Core.Helpers {
+namespace WpfCustomControlLib.Net6.Helpers {
 
     public static class CustomTxtBinder {
 

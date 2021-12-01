@@ -1,8 +1,8 @@
 <ResourceDictionary
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="clr-namespace:WpfCustomControlLib.Core"
-    xmlns:buttons="clr-namespace:WpfCustomControlLib.Core.Buttons"
+    xmlns:local="clr-namespace:WpfCustomControlLib.Net6"
+    xmlns:buttons="clr-namespace:WpfCustomControlLib.Net6.Buttons"
     >
 
 

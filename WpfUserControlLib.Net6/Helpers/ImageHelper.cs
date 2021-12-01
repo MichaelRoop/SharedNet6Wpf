@@ -1,4 +1,4 @@
-﻿namespace WpfUserControlLib.Helpers {
+﻿namespace WpfUserControlLib.Net6.Helpers {
 
     public static class ImageHelper {
 

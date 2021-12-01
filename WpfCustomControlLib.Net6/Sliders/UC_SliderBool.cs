@@ -5,7 +5,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
 
-namespace WpfCustomControlLib.Core.Sliders {
+namespace WpfCustomControlLib.Net6.Sliders {
 
     public partial class UC_SliderBool : Slider {
 

@@ -4,7 +4,7 @@ using System;
 using System.Windows;
 using System.Windows.Controls;
 
-namespace WpfCustomControlLib.Core.Helpers {
+namespace WpfCustomControlLib.Net6.Helpers {
 
     public static class WPFWinHelpers {
 

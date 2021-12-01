@@ -3,9 +3,9 @@ using System;
 using System.Windows.Controls;
 using System.Windows.Input;
 using VariousUtils.Net;
-using WpfHelperClasses.Core;
+using WpfHelperClasses.Net6;
 
-namespace WpfUserControlLib {
+namespace WpfUserControlLib.Net6 {
 
     /// <summary>Interaction logic for UC_BinaryEditBox.xaml</summary>
     public partial class UC_BinaryEditBox : UC_UintEditBoxBase {

@@ -2,7 +2,7 @@
 using System.Windows;
 using System.Windows.Controls;
 
-namespace WpfHelperClasses.Core {
+namespace WpfHelperClasses.Net6 {
 
     public static class WPF_ControlHelpers {
 

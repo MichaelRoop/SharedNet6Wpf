@@ -1,4 +1,4 @@
-﻿namespace WpfCustomControlLib.Core.Helpers {
+﻿namespace WpfCustomControlLib.Net6.Helpers {
 
     public static class CustomIconBinder {
 
@@ -12,7 +12,7 @@
 
 
         private static string GetIconSource(string name) {
-            return string.Format(@"WpfCustomControlLib.Core;component\Images\{0}", name);
+            return string.Format(@"WpfCustomControlLib.Net6;component\Images\{0}", name);
         }
 
     }

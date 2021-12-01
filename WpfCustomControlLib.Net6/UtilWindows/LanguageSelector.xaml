@@ -1,11 +1,11 @@
-﻿<Window x:Class="WpfCustomControlLib.Core.UtilWindows.LanguageSelector"
+﻿<Window x:Class="WpfCustomControlLib.Net6.UtilWindows.LanguageSelector"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:WpfCustomControlLib.Core.UtilWindows"
-        xmlns:helpers="clr-namespace:WpfCustomControlLib.Core.Helpers"
-        xmlns:controls="clr-namespace:WpfCustomControlLib.Core.Buttons"
+        xmlns:local="clr-namespace:WpfCustomControlLib.Net6.UtilWindows"
+        xmlns:helpers="clr-namespace:WpfCustomControlLib.Net6.Helpers"
+        xmlns:controls="clr-namespace:WpfCustomControlLib.Net6.Buttons"
         mc:Ignorable="d"
         Style="{DynamicResource MyWindowStyle}"
         Title="{Binding Source={x:Static helpers:CustomTxtBinder.Language}}" 
@@ -15,9 +15,9 @@
     <Window.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="pack://application:,,,/WpfCustomControlLib.Core;component/Themes/MyWindows.xaml"/>
-                <ResourceDictionary Source="pack://application:,,,/WpfCustomControlLib.Core;component/Themes/MyButtons.xaml"/>
-                <ResourceDictionary Source="pack://application:,,,/WpfCustomControlLib.Core;component/Themes/MyLabelAndText.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/WpfCustomControlLib.Net6;component/Themes/MyWindows.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/WpfCustomControlLib.Net6;component/Themes/MyButtons.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/WpfCustomControlLib.Net6;component/Themes/MyLabelAndText.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Window.Resources>

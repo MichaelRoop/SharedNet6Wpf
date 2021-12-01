@@ -1,6 +1,6 @@
 ﻿using System.Windows.Controls;
 
-namespace WpfHelperClasses.Core {
+namespace WpfHelperClasses.Net6 {
 
     /// <summary>Manages information on one Button</summary>
     public class ButtonEventInfo {

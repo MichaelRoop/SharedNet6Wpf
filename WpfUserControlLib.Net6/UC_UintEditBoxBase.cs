@@ -3,11 +3,11 @@ using System;
 using System.Collections.Generic;
 using System.Windows.Controls;
 using System.Windows.Input;
-using WpfUserControlLib.DataModels;
-using WpfUserControlLib.Enumerations;
-using WpfUserControlLib.Interfaces;
+using WpfUserControlLib.Net6.DataModels;
+using WpfUserControlLib.Net6.Enumerations;
+using WpfUserControlLib.Net6.Interfaces;
 
-namespace WpfUserControlLib {
+namespace WpfUserControlLib.Net6 {
 
     public abstract class UC_UintEditBoxBase : UserControl, IUintEditBox {
 

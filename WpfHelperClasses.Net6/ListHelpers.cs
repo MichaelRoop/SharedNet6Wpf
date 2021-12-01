@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Text;
+﻿using System.Diagnostics;
 using System.Windows.Controls;
 
-namespace WpfHelperClasses.Core {
+namespace WpfHelperClasses.Net6 {
 
     public static class ListHelpers {
 

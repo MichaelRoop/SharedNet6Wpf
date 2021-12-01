@@ -1,6 +1,6 @@
 ﻿using System.Windows.Input;
 
-namespace WpfHelperClasses.Core {
+namespace WpfHelperClasses.Net6 {
 
     public static class WpfKeyExtensions {
 

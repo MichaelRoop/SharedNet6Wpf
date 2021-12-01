@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Windows;
-using WpfCustomControlLib.Core.Helpers;
-using WpfHelperClasses.Core;
+using WpfCustomControlLib.Net6.Helpers;
+using WpfHelperClasses.Net6;
 
-namespace WpfCustomControlLib.Core.UtilWindows {
+namespace WpfCustomControlLib.Net6.UtilWindows {
 
     /// <summary>logic for MsgBoxYesNo.xaml</summary>
     public partial class MsgBoxYesNo : Window {

@@ -1,6 +1,6 @@
 ﻿using System.Windows.Controls;
 
-namespace WpfHelperClasses.Core {
+namespace WpfHelperClasses.Net6 {
 
     public static class WpfTextBoxExtensions {
 

@@ -6,7 +6,7 @@ using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
 using System.Windows.Media;
 
-namespace WpfHelperClasses.Core {
+namespace WpfHelperClasses.Net6 {
     public static class WpfControlExtensions {
 
         #region Buttons

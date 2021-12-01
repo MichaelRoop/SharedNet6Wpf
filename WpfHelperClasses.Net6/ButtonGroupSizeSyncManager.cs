@@ -3,7 +3,7 @@ using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
 
-namespace WpfHelperClasses.Core {
+namespace WpfHelperClasses.Net6 {
 
     /// <summary>Handler for synchronization multiple button widths to the widest</summary>
     public class ButtonGroupSizeSyncManager {
