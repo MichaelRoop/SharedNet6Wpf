@@ -3,17 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31912.275
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfHelperClasses.Net6", "WpfHelperClasses.Net6\WpfHelperClasses.Net6.csproj", "{8273EBA8-FD12-494E-B494-A10C108DCDF6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfHelperClasses.Net6", "WpfHelperClasses.Net6\WpfHelperClasses.Net6.csproj", "{8273EBA8-FD12-494E-B494-A10C108DCDF6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfCustomControlLib.Net6", "WpfCustomControlLib.Net6\WpfCustomControlLib.Net6.csproj", "{F3F124E6-AE7F-4C8F-971F-B5C2446F4CF2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfCustomControlLib.Net6", "WpfCustomControlLib.Net6\WpfCustomControlLib.Net6.csproj", "{F3F124E6-AE7F-4C8F-971F-B5C2446F4CF2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LanguageFactory.Net6", "..\SharedNetLibs\LanguageFactory\LanguageFactory.Net6.csproj", "{DE254FAE-CB86-445D-9ADE-0E151158254F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfUserControlLib.Net6", "WpfUserControlLib.Net6\WpfUserControlLib.Net6.csproj", "{140A9B0E-7410-44AC-AFC3-9F2F28D61346}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfUserControlLib.Net6", "WpfUserControlLib.Net6\WpfUserControlLib.Net6.csproj", "{140A9B0E-7410-44AC-AFC3-9F2F28D61346}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LanguageFactory.Net", "..\SharedNetLibs\LanguageFactory\LanguageFactory.Net.csproj", "{10956027-FA99-4FB1-A7B3-2419C6048D73}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LogUtils.Net6", "..\SharedNetLibs\LogUtils.Net\LogUtils.Net6.csproj", "{BA43D8A8-00AD-430B-87F2-99E2C4D3F523}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LogUtils.Net", "..\SharedNetLibs\LogUtils.Net\LogUtils.Net.csproj", "{91F7F4D6-78B9-4307-B59F-F296AE1B5A50}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VariousUtils.Net6", "..\SharedNetLibs\VariousUtils\VariousUtils.Net6.csproj", "{095326B1-2B46-4159-B1FE-13E9079E314F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VariousUtils.Net", "..\SharedNetLibs\VariousUtils\VariousUtils.Net.csproj", "{C16B4C05-320A-4120-A17B-640DCF08FC48}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,22 +29,22 @@ Global
 		{F3F124E6-AE7F-4C8F-971F-B5C2446F4CF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F3F124E6-AE7F-4C8F-971F-B5C2446F4CF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F3F124E6-AE7F-4C8F-971F-B5C2446F4CF2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DE254FAE-CB86-445D-9ADE-0E151158254F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DE254FAE-CB86-445D-9ADE-0E151158254F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DE254FAE-CB86-445D-9ADE-0E151158254F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DE254FAE-CB86-445D-9ADE-0E151158254F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{140A9B0E-7410-44AC-AFC3-9F2F28D61346}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{140A9B0E-7410-44AC-AFC3-9F2F28D61346}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{140A9B0E-7410-44AC-AFC3-9F2F28D61346}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{140A9B0E-7410-44AC-AFC3-9F2F28D61346}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BA43D8A8-00AD-430B-87F2-99E2C4D3F523}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BA43D8A8-00AD-430B-87F2-99E2C4D3F523}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BA43D8A8-00AD-430B-87F2-99E2C4D3F523}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BA43D8A8-00AD-430B-87F2-99E2C4D3F523}.Release|Any CPU.Build.0 = Release|Any CPU
-		{095326B1-2B46-4159-B1FE-13E9079E314F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{095326B1-2B46-4159-B1FE-13E9079E314F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{095326B1-2B46-4159-B1FE-13E9079E314F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{095326B1-2B46-4159-B1FE-13E9079E314F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10956027-FA99-4FB1-A7B3-2419C6048D73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10956027-FA99-4FB1-A7B3-2419C6048D73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10956027-FA99-4FB1-A7B3-2419C6048D73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10956027-FA99-4FB1-A7B3-2419C6048D73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91F7F4D6-78B9-4307-B59F-F296AE1B5A50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91F7F4D6-78B9-4307-B59F-F296AE1B5A50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91F7F4D6-78B9-4307-B59F-F296AE1B5A50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91F7F4D6-78B9-4307-B59F-F296AE1B5A50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C16B4C05-320A-4120-A17B-640DCF08FC48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C16B4C05-320A-4120-A17B-640DCF08FC48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C16B4C05-320A-4120-A17B-640DCF08FC48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C16B4C05-320A-4120-A17B-640DCF08FC48}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

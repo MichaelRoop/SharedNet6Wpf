@@ -9,7 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\SharedNetLibs\LanguageFactory\LanguageFactory.Net6.csproj" />
+    <ProjectReference Include="..\..\SharedNetLibs\LanguageFactory\LanguageFactory.Net.csproj" />
     <ProjectReference Include="..\WpfHelperClasses.Net6\WpfHelperClasses.Net6.csproj" />
   </ItemGroup>
 

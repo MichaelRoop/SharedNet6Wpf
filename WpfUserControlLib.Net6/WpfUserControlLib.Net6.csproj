@@ -9,8 +9,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\SharedNetLibs\LogUtils.Net\LogUtils.Net6.csproj" />
-    <ProjectReference Include="..\..\SharedNetLibs\VariousUtils\VariousUtils.Net6.csproj" />
+    <ProjectReference Include="..\..\SharedNetLibs\LogUtils.Net\LogUtils.Net.csproj" />
+    <ProjectReference Include="..\..\SharedNetLibs\VariousUtils\VariousUtils.Net.csproj" />
     <ProjectReference Include="..\WpfHelperClasses.Net6\WpfHelperClasses.Net6.csproj" />
   </ItemGroup>
 
