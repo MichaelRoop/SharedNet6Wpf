@@ -1,5 +1,4 @@
 ﻿using LogUtils.Net;
-using System;
 using System.Windows.Controls;
 using System.Windows.Input;
 using WpfHelperClasses.Net6;
@@ -10,7 +9,7 @@ namespace WpfUserControlLib.Net6 {
     /// </summary>
     public partial class UC_HexEditBox : UC_UintEditBoxBase {
 
-        private ClassLog log = new ClassLog("UC_HexEditBox");
+        private readonly ClassLog log = new ("UC_HexEditBox");
 
         public UC_HexEditBox() : base() {
             InitializeComponent();
@@ -20,24 +19,24 @@ namespace WpfUserControlLib.Net6 {
 
 
         protected override void DoSetValue(UInt64 value) {
-            this.tbEdit.TextChanged -= this.tbEdit_TextChanged;
+            this.tbEdit.TextChanged -= this.TbEdit_TextChanged;
             int carretIndex = this.tbEdit.CaretIndex;
             this.tbEdit.Text = value.ToString("X");
             this.tbEdit.CaretIndex = carretIndex > this.tbEdit.Text.Length
                 ? this.tbEdit.Text.Length
                 : carretIndex;
-            this.tbEdit.TextChanged += this.tbEdit_TextChanged;
+            this.tbEdit.TextChanged += this.TbEdit_TextChanged;
         }
 
 
         protected override void DoSetEmpty() {
-            this.tbEdit.TextChanged -= this.tbEdit_TextChanged;
+            this.tbEdit.TextChanged -= this.TbEdit_TextChanged;
             this.tbEdit.Text = "";
-            this.tbEdit.TextChanged += this.tbEdit_TextChanged;
+            this.tbEdit.TextChanged += this.TbEdit_TextChanged;
         }
 
 
-        private void tbEdit_PreviewKeyDown(object sender, KeyEventArgs args) {
+        private void TbEdit_PreviewKeyDown(object sender, KeyEventArgs args) {
             this.ProcessPreviewKey(args,
                 () => args.Key.IsHexNumericForbidden(),
                 () => args.Key.IsHexDecimal(),
@@ -52,7 +51,7 @@ namespace WpfUserControlLib.Net6 {
         }
 
 
-        private void tbEdit_TextChanged(object sender, TextChangedEventArgs e) {
+        private void TbEdit_TextChanged(object sender, TextChangedEventArgs e) {
             this.log.Info("tbEdit_TextChanged", () => this.tbEdit.Text);
             this.ProcessTextChanged(this.tbEdit.Text, () => Convert.ToUInt64(this.tbEdit.Text, 16));
         }

@@ -11,6 +11,6 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <TextBox x:Name="tbEdit" Foreground="#004c8c"  Margin="2" HorizontalAlignment="Stretch"
-            VerticalAlignment="Center" PreviewKeyDown="tbEdit_PreviewKeyDown" TextChanged="tbEdit_TextChanged" />
+            VerticalAlignment="Center" PreviewKeyDown="TbEdit_PreviewKeyDown" TextChanged="TbEdit_TextChanged" />
     </Grid>
 </local:UC_UintEditBoxBase>

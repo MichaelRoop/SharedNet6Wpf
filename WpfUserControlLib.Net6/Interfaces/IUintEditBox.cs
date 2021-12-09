@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace WpfUserControlLib.Net6.Interfaces {
+﻿namespace WpfUserControlLib.Net6.Interfaces {
 
     /// <summary>
     /// Interface to allow registration of Edit box common functionality

@@ -1,6 +1,4 @@
 ﻿using LogUtils.Net;
-using System;
-using System.Collections.Generic;
 using System.Windows.Controls;
 using System.Windows.Input;
 using WpfUserControlLib.Net6.DataModels;
@@ -11,9 +9,9 @@ namespace WpfUserControlLib.Net6 {
 
     public abstract class UC_UintEditBoxBase : UserControl, IUintEditBox {
 
-        private ClassLog log = new ClassLog("UC_UintEditBoxBase");
+        private readonly ClassLog log = new ("UC_UintEditBoxBase");
         private Func<string, bool> validateFunc;
-        private List<IUintEditBox> dependants = new List<IUintEditBox>();
+        private readonly List<IUintEditBox> dependants = new ();
 
         #region  IUintEditBox
 
