@@ -1,5 +1,4 @@
-﻿using System;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
 
 namespace WpfHelperClasses.Net6 {
@@ -50,7 +49,7 @@ namespace WpfHelperClasses.Net6 {
             PresentationSource source = PresentationSource.FromVisual(userControl);
             Point targetPoints = source.CompositionTarget.TransformFromDevice.Transform(
                 locationFromScreen);
-            Point focus = new Point();
+            Point focus = new();
             focus.X = targetPoints.X + (userControl.Width / 2.0);
             focus.Y = targetPoints.Y + (userControl.Height / 2.0);
             child.Top = focus.Y - (child.Height / 2.0);

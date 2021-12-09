@@ -25,7 +25,22 @@
       "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
       "DisplayName": "Miscellaneous Files",
       "ColorIndex": -1
+    },
+    "de254fae-cb86-445d-9ade-0e151158254f": {
+      "ProjectGuid": "de254fae-cb86-445d-9ade-0e151158254f",
+      "DisplayName": "LanguageFactory.Net6",
+      "ColorIndex": 4
+    },
+    "ba43d8a8-00ad-430b-87f2-99e2c4d3f523": {
+      "ProjectGuid": "ba43d8a8-00ad-430b-87f2-99e2c4d3f523",
+      "DisplayName": "LogUtils.Net6",
+      "ColorIndex": 5
+    },
+    "095326b1-2b46-4159-b1fe-13e9079e314f": {
+      "ProjectGuid": "095326b1-2b46-4159-b1fe-13e9079e314f",
+      "DisplayName": "VariousUtils.Net6",
+      "ColorIndex": 6
     }
   },
-  "NextColorIndex": 4
+  "NextColorIndex": 7
 }

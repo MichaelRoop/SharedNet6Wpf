@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Runtime.InteropServices;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
 using System.Windows.Media;
@@ -51,7 +48,7 @@ namespace WpfHelperClasses.Net6 {
                 }
             }
             else {
-                throw new ArgumentNullException();
+                throw new ArgumentNullException(nameof(uiElement));
             }
         }
 
@@ -182,8 +179,7 @@ namespace WpfHelperClasses.Net6 {
         /// <param name="onNone">Invoked when none selected or wrong type</param>
         public static void GetSelected<T>(this Selector selector, Action<T> onFound, Action onNone) where T:class {
             if (selector != null) {
-                T? item = selector.SelectedItem as T;
-                if (item != null) {
+                if (selector.SelectedItem is T item) {
                     onFound.Invoke(item);
                 }
                 else {

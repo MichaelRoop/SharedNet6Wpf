@@ -12,8 +12,7 @@ namespace WpfHelperClasses.Net6 {
         /// </remarks>
         public static void ForceColumnResize(this ListView listView) {
             try {
-                GridView? gv = listView.View as GridView;
-                if (gv != null) {
+                if (listView.View is GridView gv) {
                     foreach (var c in gv.Columns) {
                         if (double.IsNaN(c.Width)) {
                             c.Width = c.ActualWidth;

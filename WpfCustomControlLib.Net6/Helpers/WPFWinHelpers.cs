@@ -1,6 +1,5 @@
 ﻿using ChkUtils.Net;
 using LogUtils.Net;
-using System;
 using System.Windows;
 using System.Windows.Controls;
 
@@ -8,7 +7,7 @@ namespace WpfCustomControlLib.Net6.Helpers {
 
     public static class WPFWinHelpers {
 
-        static ClassLog LOG = new ClassLog("WindowHelpers");
+        static readonly ClassLog LOG = new ("WindowHelpers");
 
         /// <summary> 
         /// Call in MyWindowStyle styled Window OnApplyTemplate to bind drag and move
@@ -18,8 +17,7 @@ namespace WpfCustomControlLib.Net6.Helpers {
         public static void BindMouseDownToCustomTitleBar(this Window win) {
             try {
                 if (win != null) {
-                    Border? b = win.Template.FindName("brdTitle", win) as Border;
-                    if (b != null) {
+                    if (win.Template.FindName("brdTitle", win) is Border b) {
                         b.MouseDown += (sender, args) => {
                             WrapErr.ToErrReport(9999, "Drag when mouse not down", () => {
                                 if (win.WindowState == WindowState.Maximized) {
@@ -55,8 +53,7 @@ namespace WpfCustomControlLib.Net6.Helpers {
         public static void HideTitleBarIcon(this Window win) {
             try {
                 if (win != null) {
-                    Border? b = win.Template.FindName("PART_IconBorder", win) as Border;
-                    if (b != null) {
+                    if (win.Template.FindName("PART_IconBorder", win) is Border b) {
                         b.Visibility = Visibility.Collapsed;
                     }
                     else {

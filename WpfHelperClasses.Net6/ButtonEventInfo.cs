@@ -5,12 +5,6 @@ namespace WpfHelperClasses.Net6 {
     /// <summary>Manages information on one Button</summary>
     public class ButtonEventInfo {
 
-        #region Data
-
-        private string name = "";
-
-        #endregion
-
         #region Properties
 
         /// <summary>The Button held by this object</summary>
@@ -29,7 +23,6 @@ namespace WpfHelperClasses.Net6 {
         /// <param name="button">The button that is managed</param>
         public ButtonEventInfo(Button button) {
             this.ButtonObj = button;
-            this.name = button.Name;
             this.IsSized = false;
         }
 
@@ -39,7 +32,7 @@ namespace WpfHelperClasses.Net6 {
 
         /// <summary>Will set itself sized if it holds the same button</summary>
         /// <param name="button">The Button that is saved</param>
-        public void SetSizedIfSame(Button button) {
+        public void SetSizedIfSame() {
             // Will cause resize multiple times, once for each button in set but no way to compare otherwise
             this.IsSized = true;
         }

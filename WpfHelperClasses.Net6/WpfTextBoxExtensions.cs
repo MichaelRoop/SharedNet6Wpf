@@ -9,19 +9,15 @@ namespace WpfHelperClasses.Net6 {
         /// <param name="add">The additional character</param>
         /// <returns>Assebled string with new character inserted in indexed location</returns>
         public static string PreviewKeyDownAssembleText(this TextBox tb, string add) {
-            string newValue = "";
             int pos = tb.CaretIndex;
             if (pos == tb.Text.Length) {
-                newValue = string.Format("{0}{1}", tb.Text, add);
+                return string.Format("{0}{1}", tb.Text, add);
             }
             else {
-                newValue = tb.Text;
-                newValue = newValue.Insert(pos, add);
+                string newValue = tb.Text;
+                return newValue.Insert(pos, add);
             }
-            return newValue;
         }
-
-
 
     }
 }

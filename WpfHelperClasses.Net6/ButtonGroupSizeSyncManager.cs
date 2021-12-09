@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
 
 namespace WpfHelperClasses.Net6 {
@@ -10,7 +8,7 @@ namespace WpfHelperClasses.Net6 {
 
         #region Data
 
-        private List<ButtonEventInfo> buttonInfo = new List<ButtonEventInfo>();
+        private readonly List<ButtonEventInfo> buttonInfo = new ();
         private Button[] buttonObjs = Array.Empty<Button>();
 
         #endregion
@@ -61,7 +59,7 @@ namespace WpfHelperClasses.Net6 {
         private void SizeChangedHandler(object sender, SizeChangedEventArgs args) {
             Button? b = (Button?)sender;
             if (b != null) {
-                if (this.AreAllButtonsSized(b)) {
+                if (this.AreAllButtonsSized()) {
                     this.buttonInfo.ForEach((x) => this.OnSizeChanged(x));
                     WPF_ControlHelpers.ResizeToWidest(this.buttonObjs);
                 }
@@ -73,8 +71,8 @@ namespace WpfHelperClasses.Net6 {
         /// <summary>Sets the relative button info as sized and checks if all set</summary>
         /// <param name="button">The button that sent the current SizeChanged event</param>
         /// <returns>true if all managed buttons have received the SizeChanged event</returns>
-        private bool AreAllButtonsSized(Button button) {
-            this.buttonInfo.ForEach((x) => x.SetSizedIfSame(button));
+        private bool AreAllButtonsSized() {
+            this.buttonInfo.ForEach((x) => x.SetSizedIfSame());
             return this.buttonInfo.FirstOrDefault((x) => x.IsSized == false) == null;
         }
 

@@ -3,8 +3,6 @@ using System.Windows.Controls;
 using System.Windows.Media;
 
 namespace WpfCustomControlLib.Net6.Buttons {
-
-
     public class UC_IconButton : Button {
 
         #region Properties

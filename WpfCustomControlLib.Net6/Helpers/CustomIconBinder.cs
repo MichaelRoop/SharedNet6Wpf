@@ -9,7 +9,7 @@
         public static string No { get { return CustomIconBinder.Cancel; } }
         public static string OK { get { return CustomIconBinder.Yes; } }
         public static string Yes { get { return CustomIconBinder.GetIconSource("icons8-checkmark-50.png"); } }
-
+         
 
         private static string GetIconSource(string name) {
             return string.Format(@"WpfCustomControlLib.Net6;component\Images\{0}", name);

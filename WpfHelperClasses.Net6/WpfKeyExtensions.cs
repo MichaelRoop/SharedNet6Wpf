@@ -7,60 +7,32 @@ namespace WpfHelperClasses.Net6 {
         #region GetValue functions
 
         public static string GetNumericValue(this Key key) {
-            switch (key) {
-                case Key.NumPad0:
-                case Key.D0:
-                    return "0";
-                case Key.NumPad1:
-                case Key.D1:
-                    return "1";
-                case Key.NumPad2:
-                case Key.D2:
-                    return "2";
-                case Key.NumPad3:
-                case Key.D3:
-                    return "3";
-                case Key.NumPad4:
-                case Key.D4:
-                    return "4";
-                case Key.NumPad5:
-                case Key.D5:
-                    return "5";
-                case Key.NumPad6:
-                case Key.D6:
-                    return "6";
-                case Key.NumPad7:
-                case Key.D7:
-                    return "7";
-                case Key.NumPad8:
-                case Key.D8:
-                    return "8";
-                case Key.NumPad9:
-                case Key.D9:
-                    return "9";
-                default:
-                    return string.Empty;
-            }
+            return key switch {
+                Key.NumPad0 or Key.D0 => "0",
+                Key.NumPad1 or Key.D1 => "1",
+                Key.NumPad2 or Key.D2 => "2",
+                Key.NumPad3 or Key.D3 => "3",
+                Key.NumPad4 or Key.D4 => "4",
+                Key.NumPad5 or Key.D5 => "5",
+                Key.NumPad6 or Key.D6 => "6",
+                Key.NumPad7 or Key.D7 => "7",
+                Key.NumPad8 or Key.D8 => "8",
+                Key.NumPad9 or Key.D9 => "9",
+                _ => string.Empty,
+            };
         }
 
 
         public static string GetHexDecimalValue(this Key key) {
-            switch (key) {
-                case Key.A:
-                    return "A";
-                case Key.B:
-                    return "B";
-                case Key.C:
-                    return "C";
-                case Key.D:
-                    return "D";
-                case Key.E:
-                    return "E";
-                case Key.F:
-                    return "F";
-                default:
-                    return key.GetNumericValue();
-            }
+            return key switch {
+                Key.A => "A",
+                Key.B => "B",
+                Key.C => "C",
+                Key.D => "D",
+                Key.E => "E",
+                Key.F => "F",
+                _ => key.GetNumericValue(),
+            };
         }
 
 
@@ -72,31 +44,13 @@ namespace WpfHelperClasses.Net6 {
         /// <param name="key">The key press to evaluate</param>
         /// <returns>true if value 0-9, otherwise false</returns>
         public static bool IsNumeric(this Key key) {
-            switch (key) {
-                case Key.D0:
-                case Key.D1:
-                case Key.D2:
-                case Key.D3:
-                case Key.D4:
-                case Key.D5:
-                case Key.D6:
-                case Key.D7:
-                case Key.D8:
-                case Key.D9:
-                case Key.NumPad0:
-                case Key.NumPad1:
-                case Key.NumPad2:
-                case Key.NumPad3:
-                case Key.NumPad4:
-                case Key.NumPad5:
-                case Key.NumPad6:
-                case Key.NumPad7:
-                case Key.NumPad8:
-                case Key.NumPad9:
-                    return true;
-                default:
-                    return false;
-            }
+            return key switch {
+                Key.D0 or Key.D1 or Key.D2 or Key.D3 or Key.D4 or 
+                Key.D5 or Key.D6 or Key.D7 or Key.D8 or Key.D9 or 
+                Key.NumPad0 or Key.NumPad1 or Key.NumPad2 or Key.NumPad3 or Key.NumPad4 or 
+                Key.NumPad5 or Key.NumPad6 or Key.NumPad7 or Key.NumPad8 or Key.NumPad9 => true,
+                _ => false,
+            };
         }
 
 
@@ -104,27 +58,13 @@ namespace WpfHelperClasses.Net6 {
         /// <param name="key">The key press to evaluate</param>
         /// <returns>true if value 2-9, otherwise false</returns>
         public static bool IsNonBinaryNumeric(this Key key) {
-            switch (key) {
-                case Key.D2:
-                case Key.D3:
-                case Key.D4:
-                case Key.D5:
-                case Key.D6:
-                case Key.D7:
-                case Key.D8:
-                case Key.D9:
-                case Key.NumPad2:
-                case Key.NumPad3:
-                case Key.NumPad4:
-                case Key.NumPad5:
-                case Key.NumPad6:
-                case Key.NumPad7:
-                case Key.NumPad8:
-                case Key.NumPad9:
-                    return true;
-                default:
-                    return false;
-            }
+            return key switch {
+                Key.D2 or Key.D3 or Key.D4 or Key.D5 or 
+                Key.D6 or Key.D7 or Key.D8 or Key.D9 or 
+                Key.NumPad2 or Key.NumPad3 or Key.NumPad4 or Key.NumPad5 or 
+                Key.NumPad6 or Key.NumPad7 or Key.NumPad8 or Key.NumPad9 => true,
+                _ => false,
+            };
         }
 
 
@@ -132,17 +72,10 @@ namespace WpfHelperClasses.Net6 {
         /// <param name="key">The key press to evaluate</param>
         /// <returns>true if A-F, otherwise false</returns>
         public static bool IsHexLetter(this Key key) {
-            switch (key) {
-                case Key.A:
-                case Key.B:
-                case Key.C:
-                case Key.D:
-                case Key.E:
-                case Key.F:
-                    return true;
-                default:
-                    return false;
-            }
+            return key switch {
+                Key.A or Key.B or Key.C or Key.D or Key.E or Key.F => true,
+                _ => false,
+            };
         }
 
 
@@ -151,31 +84,12 @@ namespace WpfHelperClasses.Net6 {
         /// <param name="key">The key press to evaluate</param>
         /// <returns>true if G-Z, otherwise false</returns>
         public static bool IsNonHexLetter(this Key key) {
-            switch (key) {
-                case Key.G:
-                case Key.H:
-                case Key.I:
-                case Key.J:
-                case Key.K:
-                case Key.L:
-                case Key.M:
-                case Key.N:
-                case Key.O:
-                case Key.P:
-                case Key.Q:
-                case Key.R:
-                case Key.S:
-                case Key.T:
-                case Key.U:
-                case Key.V:
-                case Key.W:
-                case Key.X:
-                case Key.Y:
-                case Key.Z:
-                    return true;
-                default:
-                    return false;
-            }
+            return key switch {
+                Key.G or Key.H or Key.I or Key.J or Key.K or Key.L or Key.M or 
+                Key.N or Key.O or Key.P or Key.Q or Key.R or Key.S or Key.T or 
+                Key.U or Key.V or Key.W or Key.X or Key.Y or Key.Z => true,
+                _ => false,
+            };
         }
 
         public static bool IsLetter(this Key key) {
@@ -257,15 +171,10 @@ namespace WpfHelperClasses.Net6 {
         /// <param name="key">The key press to evaluate</param>
         /// <returns>true if G-Z, otherwise false</returns>
         public static bool IsMath(this Key key) {
-            switch (key) {
-                case Key.Multiply:
-                case Key.Add:
-                //case Key.Subtract:
-                case Key.Divide:
-                    return true;
-                default:
-                    return false;
-            }
+            return key switch {
+                Key.Multiply or Key.Add or Key.Divide => true,
+                _ => false,
+            };
         }
 
         public static bool IsMinus(this Key key) {
@@ -276,13 +185,10 @@ namespace WpfHelperClasses.Net6 {
 
 
         public static bool IsWhitespace(this Key key) {
-            switch (key) {
-                case Key.Tab:
-                case Key.Space:
-                    return true;
-                default:
-                    return false;
-            }
+            return key switch {
+                Key.Tab or Key.Space => true,
+                _ => false,
+            };
         }
 
 
