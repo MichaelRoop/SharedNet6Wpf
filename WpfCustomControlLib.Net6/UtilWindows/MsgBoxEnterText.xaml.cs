@@ -10,8 +10,8 @@ namespace WpfCustomControlLib.Net6.UtilWindows {
 
         #region Data
 
-        private Window? parent;
-        private ButtonGroupSizeSyncManager widthManager;
+        private readonly Window? parent;
+        private readonly ButtonGroupSizeSyncManager widthManager;
 
         #endregion
 
@@ -39,7 +39,7 @@ namespace WpfCustomControlLib.Net6.UtilWindows {
         #region Static methods
 
         public static MsgBoxTextInputData ShowBox(Window win, string title, string msg, string defaultTxt = "") {
-            MsgBoxEnterText box = new MsgBoxEnterText(win, title, msg, defaultTxt);
+            MsgBoxEnterText box = new(win, title, msg, defaultTxt);
             box.ShowDialog();
             return box.Result;
         }

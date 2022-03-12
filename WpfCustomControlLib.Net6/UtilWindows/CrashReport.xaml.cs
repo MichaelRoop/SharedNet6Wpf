@@ -14,10 +14,10 @@ namespace WpfCustomControlLib.Net6.UtilWindows {
 
         #region Data and events
 
-        private string buildNumber = "2021.01.01.00";
-        private string appName = "UNKNOWN APP";
-        private Window parent;
-        private ButtonGroupSizeSyncManager buttonWidthManager;
+        private readonly string buildNumber = "2021.01.01.00";
+        private readonly string appName = "UNKNOWN APP";
+        private readonly Window parent;
+        private readonly ButtonGroupSizeSyncManager buttonWidthManager;
 
         #endregion
 
@@ -26,7 +26,7 @@ namespace WpfCustomControlLib.Net6.UtilWindows {
 
         public static void ShowBox(Exception ex, Window parent, string appName) {
             try {
-                CrashReport win = new CrashReport(ex, parent, appName);
+                CrashReport win = new(ex, parent, appName);
                 win.ShowDialog();
             }
             catch (Exception e) {
@@ -35,7 +35,7 @@ namespace WpfCustomControlLib.Net6.UtilWindows {
         }
 
         public static void ShowBox(ErrReport report, Window parent, string appName) {
-            CrashReport win = new CrashReport(report, parent, appName);
+            CrashReport win = new(report, parent, appName);
             win.ShowDialog();
         }
 
@@ -91,7 +91,7 @@ namespace WpfCustomControlLib.Net6.UtilWindows {
             try {
                 this.errBox.SelectAll();
                 this.errBox.Copy();
-                StringBuilder sb = new StringBuilder();
+                StringBuilder sb = new();
                 sb.Append("          Date: ").Append(DateTime.Now.ToLongDateString()).AppendLine("")
                     .Append(" Windows Ver: ").Append(Environment.OSVersion.VersionString).AppendLine("")
                     .Append("    App Name: ").Append(this.appName).AppendLine("")
@@ -113,7 +113,7 @@ namespace WpfCustomControlLib.Net6.UtilWindows {
             Dispatcher.Invoke(async () => {
                 try {
                     string body = this.errBox.Text.Replace("\r\n", "%0d%0A");
-                    StringBuilder sb = new StringBuilder();
+                    StringBuilder sb = new();
                     sb.Append("mailto:MultiCommTerminal@gmail.com")
                         .Append(string.Format("?subject={0} CRASH REPORT", this.appName))
                         .Append("&body=")

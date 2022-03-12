@@ -15,18 +15,18 @@ namespace WpfCustomControlLib.Net6.UtilWindows {
 
         #region Data
 
-        private LangCode languageOnEntry = LangCode.English;
-        private ButtonGroupSizeSyncManager widthManager;
-        private Window parent;
-        ILangFactory languageFactory;
-        ClassLog log = new ClassLog("");
+        private readonly LangCode languageOnEntry = LangCode.English;
+        private readonly ButtonGroupSizeSyncManager widthManager;
+        private readonly Window parent;
+        readonly ILangFactory languageFactory;
+        readonly ClassLog log = new ("");
 
         #endregion
 
         #region Constructors and windows events
 
         public static void ShowBox(Window parent, ILangFactory languageFactory) {
-            LanguageSelector win = new LanguageSelector(parent, languageFactory);
+            LanguageSelector win = new (parent, languageFactory);
             win.ShowDialog();
         }
 
